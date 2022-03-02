@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Empleos UTN</title>
@@ -28,38 +27,20 @@
   </ul>
 </nav>
 
-<!-- Formulario de inicio de sesión -->
-<div id="logIn">
-  <form id="logInForm">
-    <label for="userTextField">Usuario</label><br>
-    <input id="userTextField" name="username" type="text" required placeholder="usuario"><br>
-    <label for="passwordTextField">Contraseña</label><br>
-    <input id="passwordTextField" name="password" type="password" required placeholder="contraseña"><br>
-    <button type="submit">Iniciar sesión</button><br>
-    <small>¿Olvidó su contraseña? </small><a href="#">Click aquí</a><br>
-    <small>¿No tienes una cuenta? </small><a href="registrar-cuenta.html">Click aquí</a><br>
+<!-- Formulario de distinción -->
+
+<div id="registerSelect">
+  <form id="registerSelectForm">
+    <input id="registerSelectFormEnterprise" name="userType" type="radio" value="enterprise" required>
+    <label for="registerSelectFormEnterprise">Soy una empresa</label><br>
+    <input id="registerSelectFormStudent" name="userType" type="radio" value="student" required>
+    <label for="registerSelectFormStudent">Soy un estudiante</label><br>
+    <button>
+      <a href="logIn.html">Volver</a>
+    </button>
+    <button type="submit">Siguiente</button><br>
   </form>
 </div>
-
-<!-- Carrusel de imágenes -->
-<div class="slideshow-container">
-  <div class="slide-image fade">
-    <div class="number-text">1/3</div>
-    <img src="../img/accenture.png" height="180px" width="300px">
-    <div class="image-caption">Accenture</div>
-  </div>
-  <div class="slide-image fade">
-    <div class="number-text">2/3</div>
-    <img src="../img/globant.png" height="180px" width="300px">
-    <div class="image-caption">Globant</div>
-  </div>
-  <div class="slide-image fade">
-    <div class="number-text">3/3</div>
-    <img src="../img/avalith.png" height="180px" width="300px">
-    <div class="image-caption">Avalith</div>
-  </div>
-</div>
-<br>
 
 <!-- Pie de página -->
 <footer id="footer">
