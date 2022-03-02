@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Empleos UTN</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
-<body>
 
+<body>
+<!-- Encabezado de la página -->
+<header id="header">
+    <img src="../img/logoUTN.png">
+</header>
+
+<!-- Barra de navegación -->
+<nav id="nav">
+    <ul>
+        <li>
+            <a href="index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="#">Iniciar Sesión</a>
+        </li>
+        <li>
+            <a href="#contactForm">Contacto</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Formulario para el registro de una cuenta de estudiante -->
+<div id="registerStudent">
+    <label for="studentRegisterForm">Registro de estudiante</label>
+    <form id="studentRegisterForm">
+        <label for="studentRegisterFormFirstName">Nombre</label><br>
+        <input id="studentRegisterFormFirstName" name="firstName" type="text" required placeholder="nombre"><br>
+        <label for="studentRegisterFormLastName">Apellido</label><br>
+        <input id="studentRegisterFormLastName" name="lastName" type="text" required placeholder="apellido"><br>
+        <label for="studentRegisterFormEmail">Email</label><br>
+        <input id="studentRegisterFormEmail" name="email" type="email" required placeholder="correo electrónico"><br>
+        <label for="studentRegisterFormEmailCheck">Confirmación de email</label><br>
+        <input id="studentRegisterFormEmailCheck" name="emailCheck" type="email" required placeholder="confirmar el correo"><br>
+        <label for="studentRegisterFormBirthDate">Fecha de nacimiento</label><br>
+        <input id="studentRegisterFormBirthDate" name="birthDate" type="date" required><br>
+        <label for="studentRegisterFormDni">DNI</label><br>
+        <input id="studentRegisterFormDni" name="dni" type="number" required placeholder="documento nacional de identidad"><br>
+        <label for="studentRegisterFormAddressStreet">Dirección</label><br>
+        <input id="studentRegisterFormAddressStreet" name="addressStreet" type="text" required placeholder="calle"><br>
+        <label for="studentRegisterFormAddressNumber">Dirección</label><br>
+        <input id="studentRegisterFormAddressNumber" name="addressNumber" type="number" required placeholder="altura"><br>
+        <label for="studentRegisterFormPhone">Teléfono</label><br>
+        <input id="studentRegisterFormPhone" name="phone" type="number" required placeholder="número de teléfono sin el 15"><br>
+        <label for="studentRegisterFormPassword">Contraseña</label><br>
+        <input id="studentRegisterFormPassword" name="password" type="password" required placeholder="contraseña"><br>
+        <label for="studentRegisterFormPasswordCheck">Confirmación de contraseña</label><br>
+        <input id="studentRegisterFormPasswordCheck" name="passwordCheck" type="password" required placeholder="confirmar la contraseña"><br>
+        <button>
+            <a href="registrar-cuenta.html">Volver</a>
+        </button>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Siguiente</button>
+    </form>
+</div><br>
+
+<!-- Pie de página -->
+<footer id="footer">
+    <!-- Formulario de contacto -->
+    <span id="contact">
+        <label for="contactForm">Información de contacto</label>
+        <form id="contactForm">
+            <label for="contactFormFirstName">Nombre</label><br>
+            <input id="contactFormFirstName" name="firstName" type="text" required placeholder="nombre"><br>
+            <label for="contactFormLastName">Apellido</label><br>
+            <input id="contactFormLastName" name="lastName" type="text" required placeholder="apellido"><br>
+            <label for="contactFormPhone">Teléfono</label><br>
+            <input id="contactFormPhone" name="phone" type="number" required placeholder="su número sin el 15"><br>
+            <label for="contactFormEmail">Email</label><br>
+            <input id="contactFormEmail" name="email" type="email" required placeholder="correo electrónico"><br>
+            <label for="contactFormMassage">Mensaje</label><br>
+            <input id="contactFormMassage" name="massage" type="text" placeholder="deje su mensaje aquí"><br>
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </span>
+    <!-- Información de la facultad -->
+    <span id="institutionInformation">
+        <p>
+            Teléfonos<br>
+            0223 480-5049 / 3479 / 1220<br>
+            Correo electrónico<br>
+            informes@mdp.utn.edu.ar<br>
+            Dirección<br>
+            Buque Pesquero Dorrego N° 281<br>
+            <button>
+                <a href="https://www.instagram.com/utnmardelplata/?hl=es">Instagram</a>
+            </button>
+            <button>
+                <a href="https://es-la.facebook.com/utnmardelplata/">Facebook</a>
+            </button>
+            <button>
+                <a href="https://www.mdp.edu.ar/">Página oficial</a>
+            </button>
+        </p>
+    </span>
+    <!-- Google maps -->
+    <span id="googleLocation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </span>
+</footer>
 </body>
 </html>
