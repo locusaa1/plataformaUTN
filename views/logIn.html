@@ -1,70 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Empleos UTN</title>
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Empleos UTN</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 <!-- Encabezado de la página -->
 <header id="header">
-  <img src="../img/logoUTN.png">
+    <img src="../img/logoUTN.png">
 </header>
 
 <!-- Barra de navegación -->
 <nav id="nav">
-  <ul>
-    <li>
-      <a href="index.html">Inicio</a>
-    </li>
-    <li>
-      <a href="#">Iniciar Sesión</a>
-    </li>
-    <li>
-      <a href="#contactForm">Contacto</a>
-    </li>
-  </ul>
+    <ul>
+        <li>
+            <a href="../index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="logIn.html">Iniciar Sesión</a>
+        </li>
+        <li>
+            <a href="#contactForm">Contacto</a>
+        </li>
+    </ul>
 </nav>
 
 <!-- Formulario de inicio de sesión -->
 <div id="logIn">
-  <form id="logInForm">
-    <label for="userTextField">Usuario</label><br>
-    <input id="userTextField" name="username" type="text" required placeholder="usuario"><br>
-    <label for="passwordTextField">Contraseña</label><br>
-    <input id="passwordTextField" name="password" type="password" required placeholder="contraseña"><br>
-    <button type="submit">Iniciar sesión</button><br>
-    <small>¿Olvidó su contraseña? </small><a href="#">Click aquí</a><br>
-    <small>¿No tienes una cuenta? </small><a href="registrar-cuenta.html">Click aquí</a><br>
-  </form>
+    <form id="logInForm">
+        <label for="userTextField">Usuario</label><br>
+        <input id="userTextField" name="username" type="text" required placeholder="usuario"><br>
+        <label for="passwordTextField">Contraseña</label><br>
+        <input id="passwordTextField" name="password" type="password" required placeholder="contraseña"><br>
+        <button type="submit">Iniciar sesión</button>
+        <br>
+        <small>¿Olvidó su contraseña? </small><a href="#">Click aquí</a><br>
+        <small>¿No tienes una cuenta? </small><a href="registrar-cuenta.html">Redirección a registrar</a><br>
+    </form>
 </div>
 
 <!-- Carrusel de imágenes -->
 <div class="slideshow-container">
-  <div class="slide-image fade">
-    <div class="number-text">1/3</div>
-    <img src="../img/accenture.png" height="180px" width="300px">
-    <div class="image-caption">Accenture</div>
-  </div>
-  <div class="slide-image fade">
-    <div class="number-text">2/3</div>
-    <img src="../img/globant.png" height="180px" width="300px">
-    <div class="image-caption">Globant</div>
-  </div>
-  <div class="slide-image fade">
-    <div class="number-text">3/3</div>
-    <img src="../img/avalith.png" height="180px" width="300px">
-    <div class="image-caption">Avalith</div>
-  </div>
+    <div class="slide-image fade">
+        <p class="number-text">1/3</p>
+        <img src="../img/accenture.png" height="180px" width="300px">
+        <p class="image-caption">Accenture</p>
+    </div>
+    <div class="slide-image fade">
+        <p class="number-text">2/3</p>
+        <img src="../img/globant.png" height="180px" width="300px">
+        <p class="image-caption">Globant</p>
+    </div>
+    <div class="slide-image fade">
+        <p class="number-text">3/3</p>
+        <img src="../img/avalith.png" height="180px" width="300px">
+        <div class="image-caption">Avalith</div>
+    </div>
 </div>
 <br>
 
 <!-- Pie de página -->
 <footer id="footer">
-  <!-- Formulario de contacto -->
-  <span id="contact">
+    <!-- Formulario de contacto -->
+    <span id="contact">
         <label for="contactForm">Información de contacto</label>
         <form id="contactForm">
             <label for="contactFormFirstName">Nombre</label><br>
@@ -81,8 +82,8 @@
             <button type="submit">Enviar</button>
         </form>
     </span>
-  <!-- Información de la facultad -->
-  <span id="institutionInformation">
+    <!-- Información de la facultad -->
+    <span id="institutionInformation">
         <p>
             Teléfonos<br>
             0223 480-5049 / 3479 / 1220<br>
@@ -101,9 +102,10 @@
             </button>
         </p>
     </span>
-  <!-- Google maps -->
-  <span id="googleLocation">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- Google maps -->
+    <span id="googleLocation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </span>
 </footer>
 </body>
