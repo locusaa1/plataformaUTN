@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundImage{
+    background-image: url("../img/webPageBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header{
+    position: center;
+    display: block;
+    text-align: center;
+    background-color: white;
+}
+
+.nav{
+    height: 5vh;
+    display: block;
+    width: 100vw;
+    background-color: #5c94a1;
+}
+
+.navList{
+    display: block;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navList__item{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 33%;
+}
+
+.navList__item:hover{
+    background-color: white;
+}
+
+.navList__itemLink{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.welcomeContainer{
+    display: block;
+    border: solid 10px white;
+    border-radius: 5px;
+    margin: 10% 15%;
+    padding: 2% 5%;
+    background-color: #5c94a1;
+}
+
+.welcome__title{
+    text-align: center;
+    margin: 2% 3%;
+    font-family: Arial;
+}
+
+.welcome__massage{
+    text-align: center;
+    font-family: Arial;
+    margin: 2%;
+}
+
+.slideshow-container{
+    display: block;
+    background-color: #5c94a1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    border-top: solid 10px white;
+    border-bottom: solid 10px white;
+}
+
+.imageContainer{
+    display: inline-block;
+    margin: 1% 2%;
+}
+
+.imageContainer__number{
+    text-align: center;
+    background-color: black;
+    margin-right: 90%;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+.imageContainer__caption{
+    text-align: center;
+    background-color: black;
+    font-family: Arial;
+    color: white;
+}
+
+#footer{
+    display: block;
+    background-color: #3b6b78;
+    margin-top: 15%;
+    padding: 3% 5%;
+    text-align: center;
+}
+
+.formContainer{
+    display: inline-block;
+    text-align: left;
+    margin: 2%;
+    border: solid 3px white;
+    padding: 3%;
+}
+
+.institutionInformation{
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.locationContainer{
+    display: inline-block;
+    height: 30%;
+    width: 30%;
+}
+
+.googleLocation{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
