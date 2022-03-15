@@ -20,6 +20,9 @@
 .nav{
     height: 5vh;
     display: block;
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
     width: 100vw;
     background-color: #5c94a1;
 }
@@ -137,4 +140,145 @@
     display: inline-block;
     height: 100%;
     width: 100%;
+}
+
+#logIn{
+    display: block;
+    width: 30%;
+    padding: 2% 5%;
+    margin: 2% 30%;
+    border: solid 3px white;
+    background-color: #5c94a1;
+    border-radius: 2px;
+}
+
+.logInForm{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.logInForm__userNameField{
+    text-align: left;
+}
+
+.logInForm__passwordField{
+    text-align: left;
+}
+
+.logInForm__submitButton{
+    text-align: center;
+}
+
+.logInForm__options{
+    text-align: left;
+}
+
+.selectForm{
+    display: block;
+    position: relative;
+    padding: 2%;
+    height: 100%;
+    width: 30%;
+    margin: 15vh auto;
+    border: solid 3px white;
+    border-radius: 2px;
+    background-color: #5c94a1;
+}
+
+.selectForm__radioButtons{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selectForm__title{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selectForm__buttons{
+    text-align: center;
+}
+
+.selectForm__buttons button{
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.selectForm__buttons button a{
+    text-decoration: none;
+    color: black;
+}
+
+.studentRegisterForm{
+    width: 30%;
+    height: 100%;
+    margin: 5% auto;
+    background-color: #5c94a1;
+    border: solid 3px white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.studentRegisterForm__fields{
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+.studentRegisterForm__title{
+    margin: 10px auto;
+}
+
+.studentRegisterForm__buttons{
+    margin: 10px auto;
+}
+
+.studentRegisterForm__buttons button a{
+    text-decoration: none;
+    color: black;
+}
+
+.enterpriseRegisterForm {
+    width: 30%;
+    height: 100%;
+    margin: 5% auto;
+    background-color: #5c94a1;
+    border: solid 3px white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.enterpriseRegisterForm__title{
+    margin: 10px auto;
+}
+
+.enterpriseRegisterForm__subtitle{
+    margin: 10px auto;
+}
+
+.enterpriseRegisterForm__info{
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+.enterpriseRegisterForm__managerInfo{
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+.enterpriseRegisterForm__buttons{
+    margin: 10px auto;
+}
+
+.enterpriseRegisterForm__buttons button a{
+    text-decoration: none;
+    color: black;
 }
