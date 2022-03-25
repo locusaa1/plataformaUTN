@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Empleos UTN</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/local-stylesheet.css">
+</head>
+
+<body>
+<div class="backgroundImage">
+<!-- Encabezado de la página -->
+<header class="header">
+    <img class="header__image" src="img/logoUTN.png">
+</header>
+
+<!-- Barra de navegación -->
+<nav class="nav">
+    <ul class="navList">
+        <li class="navList__item">
+            <a class="navList__itemLink" href="index.html">Inicio</a>
+        </li>
+        <li class="navList__item">
+            <a class="navList__itemLink" href="views/logIn.html">Iniciar Sesión</a>
+        </li>
+        <li class="navList__item">
+            <a class="navList__itemLink" href="#footer">Contacto</a>
+        </li>
+    </ul>
+</nav>
+
+<!--Mensaje de presentación -->
+<div class="welcomeContainer">
+    <h1 class="welcome__title">Plataforma de empleos</h1>
+    <p class="welcome__massage">
+        Bienvenido a la aplicación web de empleos de la Universidad Tecnológica Nacional.<br>
+        Este portal tiene como objetivo conectar a nuestros estudiantes y egresados con las mejores empresas y sus<br>
+        ofertas laborales publicadas dentro del sitio, para de esta forma poder brindar la primera experiencia
+        laboral<br>
+        y una rápida inserción dentro del mercado IT.
+    </p>
+</div>
+
+<!-- Carrusel de imágenes -->
+<div class="slideshow-container">
+    <div class="imageContainer">
+        <p class="imageContainer__number">1/3</p>
+        <img src="img/accenture.png" height="180px" width="300px">
+        <p class="imageContainer__caption">Accenture</p>
+    </div>
+    <div class="imageContainer">
+        <p class="imageContainer__number">2/3</p>
+        <img src="img/globant.png" height="180px" width="300px">
+        <p class="imageContainer__caption">Globant</p>
+    </div>
+    <div class="imageContainer">
+        <p class="imageContainer__number">3/3</p>
+        <img src="img/avalith.png" height="180px" width="300px">
+        <p class="imageContainer__caption">Avalith</p>
+    </div>
+</div>
+<br>
+
+<!-- Pie de página -->
+<footer id="footer">
+    <!-- Formulario de contacto -->
+    <div class="formContainer">
+        <p class="formTitle">Información de contacto</p>
+        <form class="contactForm">
+            <label for="contactFormFirstName">Nombre</label><br>
+            <input id="contactFormFirstName" name="firstName" type="text" required placeholder="nombre"><br>
+            <label for="contactFormLastName">Apellido</label><br>
+            <input id="contactFormLastName" name="lastName" type="text" required placeholder="apellido"><br>
+            <label for="contactFormPhone">Teléfono</label><br>
+            <input id="contactFormPhone" name="phone" type="number" required placeholder="su número sin el 15"><br>
+            <label for="contactFormEmail">Email</label><br>
+            <input id="contactFormEmail" name="email" type="email" required placeholder="correo electrónico"><br>
+            <label for="contactFormMassage">Mensaje</label><br>
+            <input id="contactFormMassage" name="massage" type="text" placeholder="deje su mensaje aquí"><br>
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- Información de la facultad -->
+    <div class="institutionInformation">
+        <p>
+            Teléfonos<br>
+            0223 480-5049 / 3479 / 1220<br>
+            Correo electrónico<br>
+            informes@mdp.utn.edu.ar<br>
+            Dirección<br>
+            Buque Pesquero Dorrego N° 281<br>
+            <button>
+                <a href="https://www.instagram.com/utnmardelplata/?hl=es">Instagram</a>
+            </button>
+            <button>
+                <a href="https://es-la.facebook.com/utnmardelplata/">Facebook</a>
+            </button>
+            <button>
+                <a href="https://www.mdp.edu.ar/">Página oficial</a>
+            </button>
+        </p>
+    </div>
+    <!-- Google maps -->
+    <div class="locationContainer">
+        <iframe class="googleLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+</div>
+</body>
+</html>
