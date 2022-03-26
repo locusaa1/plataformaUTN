@@ -5,85 +5,135 @@
     <title>Empleos UTN</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../stylesheets/local-stylesheet.css">
+    <link rel="stylesheet" href="../stylesheets/new-local-stylesheet.css">
 </head>
 
 <body>
-<div class="backgroundImage">
-    <!-- Encabezado de la página -->
+<main class="index-grid">
+
+    <!--Encabezado-->
     <header class="header">
         <img class="header__image" src="../img/logoUTN.png">
     </header>
 
-    <!-- Barra de navegación -->
+    <!--Barra de navegación-->
     <nav class="nav">
         <ul class="navList">
-            <li class="navList__item">
-                <a class="navList__itemLink" href="../index.html">Inicio</a>
+            <li>
+                <a href="../index.html">Inicio</a>
             </li>
-            <li class="navList__item">
-                <a class="navList__itemLink" href="../views/logIn.html">Iniciar Sesión</a>
+            <li>
+                <a href="logIn.html">Iniciar Sesión</a>
             </li>
-            <li class="navList__item">
-                <a class="navList__itemLink" href="#footer">Contacto</a>
+            <li>
+                <a href="#footer">Contacto</a>
             </li>
         </ul>
     </nav>
 
-    <!-- Formulario de distinción -->
-    <form class="selectForm">
-        <div class="selectForm__title">
-            <label>Seleccione una opción</label>
-        </div>
-        <div class="selectForm__radioButtons">
-            <input id="selectFormEnterprise" name="userType" type="radio" value="enterprise" required>
-            <label for="selectFormEnterprise">Soy una empresa</label><br>
-            <input id="selectFormStudent" name="userType" type="radio" value="student" required>
-            <label for="selectFormStudent">Soy un estudiante</label>
-        </div>
-        <div class="selectForm__buttons">
-            <button>
-                <a href="logIn.html">Volver</a>
-            </button>
-            <button>
-                <a href="registrar-estudiante.html">Redirección estudiantes</a>
-            </button>
-            <button>
-                <a href="registrar-empresa.html">Redirección empresas</a>
-            </button>
-        </div>
-    </form>
+    <!--Sección principal-->
+    <section class="section">
 
+        <!-- Formulario de distinción -->
+        <div class="logIn">
+            <form class="logInForm">
+                <p>Seleccione una opción</p>
+                <div class="logInForm__inputBox__row">
+                    <input id="selectFormEnterprise" name="userType" type="radio" value="enterprise" required>
+                    <label for="selectFormEnterprise">Soy una empresa</label>
+                </div>
+                <div class="logInForm__inputBox__row">
+                    <input id="selectFormStudent" name="userType" type="radio" value="student" required>
+                    <label for="selectFormStudent">Soy un estudiante</label>
+                </div>
+                <div class="logInForm__buttonsBox">
+                    <button>
+                        <a href="logIn.html">Volver</a>
+                    </button>
+                    <button>
+                        <a href="registrar-estudiante.html">Redirección estudiantes</a>
+                    </button>
+                    <button>
+                        <a href="registrar-empresa.html">Redirección empresas</a>
+                    </button>
+                </div>
+            </form>
+        </div>
 
-    <!-- Pie de página -->
-    <footer id="footer">
+        <!--empresas-->
+        <div class="empresas">
+            <h2 class="empresas__titulo">Empresas asociadas</h2>
+            <div class="contenedorImagenes">
+                <div class="empresas__imagen">
+                    <p>Accenture</p>
+                    <img src="../img/accenture.png">
+                </div>
+                <div class="empresas__imagen">
+                    <p>Globant</p>
+                    <img src="../img/globant.png">
+                </div>
+                <div class="empresas__imagen">
+                    <p>Avalith</p>
+                    <img src="../img/avalith.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer id="footer" class="footer">
+
         <!-- Formulario de contacto -->
         <div class="formContainer">
             <p class="formTitle">Información de contacto</p>
             <form class="contactForm">
-                <label for="contactFormFirstName">Nombre</label><br>
-                <input id="contactFormFirstName" name="firstName" type="text" required placeholder="nombre"><br>
-                <label for="contactFormLastName">Apellido</label><br>
-                <input id="contactFormLastName" name="lastName" type="text" required placeholder="apellido"><br>
-                <label for="contactFormPhone">Teléfono</label><br>
-                <input id="contactFormPhone" name="phone" type="number" required placeholder="su número sin el 15"><br>
-                <label for="contactFormEmail">Email</label><br>
-                <input id="contactFormEmail" name="email" type="email" required placeholder="correo electrónico"><br>
-                <label for="contactFormMassage">Mensaje</label><br>
-                <input id="contactFormMassage" name="massage" type="text" placeholder="deje su mensaje aquí"><br>
-                <button type="reset">Limpiar</button>
-                <button type="submit">Enviar</button>
+                <div class="contactForm__inputBox">
+                    <label for="contactFormFirstName">Nombre</label>
+                    <input id="contactFormFirstName" name="firstName" type="text" required placeholder="nombre">
+                </div>
+                <div class="contactForm__inputBox">
+                    <label for="contactFormLastName">Apellido</label>
+                    <input id="contactFormLastName" name="lastName" type="text" required placeholder="apellido">
+                </div>
+                <div class="contactForm__inputBox">
+                    <label for="contactFormPhone">Teléfono</label>
+                    <input id="contactFormPhone" name="phone" type="number" required placeholder="su número sin el 15">
+                </div>
+                <div class="contactForm__inputBox">
+                    <label for="contactFormEmail">Email</label>
+                    <input id="contactFormEmail" name="email" type="email" required placeholder="correo electrónico">
+                </div>
+                <div class="contactForm__inputBox">
+                    <label for="contactFormMassage">Mensaje</label>
+                    <textarea class="messageInput" rows="5" cols="60" id="contactFormMassage" name="massage" type=""
+                              placeholder="deje su mensaje aquí"></textarea>
+                </div>
+                <div class="contactForm__buttonsBox">
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </div>
+
+        <!-- Google maps -->
+        <div class="locationContainer">
+            <iframe class="googleLocation"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
         <!-- Información de la facultad -->
-        <div class="institutionInformation">
-            <p>
+        <div class="informacionInstitucional">
+            <p class="informacionInstitucional__texto">
                 Teléfonos<br>
                 0223 480-5049 / 3479 / 1220<br>
                 Correo electrónico<br>
                 informes@mdp.utn.edu.ar<br>
                 Dirección<br>
                 Buque Pesquero Dorrego N° 281<br>
+            </p>
+            <div class="informacionInstitucional__buttonsBox">
                 <button>
                     <a href="https://www.instagram.com/utnmardelplata/?hl=es">Instagram</a>
                 </button>
@@ -93,15 +143,9 @@
                 <button>
                     <a href="https://www.mdp.edu.ar/">Página oficial</a>
                 </button>
-            </p>
+            </div>
         </div>
-        <!-- Google maps -->
-        <div class="locationContainer">
-            <iframe class="googleLocation"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.916793665604!2d-57.54487658467455!3d-38.04902507971045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde623dd7a1f%3A0x7b8d37b35da66cdc!2sAv.%20Dorrego%20281%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1646176380303!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+
     </footer>
-</div>
 </body>
 </html>

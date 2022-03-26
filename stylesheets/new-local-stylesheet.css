@@ -280,11 +280,26 @@
         margin: 5px;
     }
 
+    .logInForm__inputBox__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
     .logInForm__optionsBox {
         display: flex;
         margin: 15px 0;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    .logInForm__buttonsBox {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         align-items: center;
     }
 
