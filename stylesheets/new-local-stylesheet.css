@@ -2,289 +2,66 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
+    font-size: 18px;
 }
 
-/*css específico para pantalla de celulares*/
-.index-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 100vw);
-    grid-template-rows: repeat(4, fit-content(100vh));
-    grid-template-areas:
-    "header"
-    "nav"
-    "section"
-    "footer";
-    height: 100vh;
-    width: 100vw;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    grid-area: header;
-    justify-content: center;
-    width: 100%;
-    height: 15vh;
-}
-
+/*css específico para pantalla de celulares nuevo*/
 .header__image {
     width: 80%;
     height: 100%;
 }
 
-.nav {
-    display: inline-block;
-    width: 100%;
-    height: 5vh;
-    background-color: #1c7fad;
-    grid-area: nav;
-}
-
-.navList {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    list-style: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.navList li {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.navList li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    line-height: 250%;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.navList li:hover {
-    background-color: black;
-}
-
-.navList li a:hover {
-    color: white;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-area: section;
+.navCustom {
+    background-color: #5c94a1;
 }
 
 .presentacion {
-    position: relative;
-    height: 60vh;
-    width: 100vw;
     background-image: url("../img/fotoUTN.jpg");
-    background-position: center;
     background-size: cover;
 }
 
-.presentacion h1 {
-    position: relative;
-    top: 10%;
-    text-align: center;
-    color: #272e2f;
+.bienvenida {
+    background-color: #5c94a1;
 }
 
-.informacion {
-    display: block;
-    width: 100vw;
-    background-color: white;
-    margin: 5% 0;
-    text-align: center;
-}
-
-.informacion__titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.informacion__titulo__img {
+.carouselSection {
+    width: 60vw;
     height: 30vh;
-    width: 100vw;
+    margin: auto;
 }
 
-.empresas {
+.carousel-item img {
+    width: 100px;
+    height: 100%;
+}
+
+.carousel-control {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carousel-control:hover{
+    color: #3b6b78;
+}
+
+.footerCustom {
     display: flex;
-    width: 100vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-color: #3b6b78;
-}
-
-.empresas h2 {
-    text-align: center;
-}
-
-.empresas__imagen {
-    display: block;
-    padding: 5%;
-    text-align: center;
-}
-
-.empresas__imagen p {
-    font-family: Arial;
-    font-size: large;
-}
-
-.empresas__imagen img {
-    height: 180px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
     background-color: #797979;
-}
-
-.formContainer {
-    display: flex;
-    width: 100vw;
-    margin: 10px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.formContainer p {
-    height: 30%;
-    margin: 20px 20px;
-    font-family: Arial;
-    font-size: large;
-}
-
-
-.contactForm {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-.contactForm__inputBox label {
-    text-align: center;
-    display: block;
-    margin: 5px;
-}
-
-.contactForm__inputBox input {
-    display: block;
-}
-
-.contactForm__buttonsBox {
-    display: flex;
-    width: 100%;
-    padding: 15px 0;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.messageInput::-webkit-input-placeholder {
-    text-align: center;
-}
-
-.locationContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
 }
 
 .googleLocation {
     height: 300px;
-    width: 400px;
-}
-
-.informacionInstitucional {
-    display: flex;
-    margin: 10px 0;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.informacionInstitucional__texto {
-    text-align: center;
-    margin: 15px 0;
-}
-
-.informacionInstitucional__buttonsBox button a {
-    text-decoration: none;
-    color: black;
-}
-
-.logIn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20% 0;
-    width: 100vw;
-}
-
-.logInForm {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: solid 3px black;
-    border-radius: 5px;
-    background-color: #5c94a1;
-}
-
-.logInForm p {
-    margin: 5px;
-    font-size: large;
-    font-weight: bold;
-}
-
-.logInForm__inputBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-}
-
-.logInForm__inputBox__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+.formCustom {
+    border: black solid 3px;
+    background-color: #3b6b78;
 }
 
 .logInForm__optionsBox {
@@ -302,66 +79,10 @@
     align-items: center;
 }
 
-.logInForm__buttonsBox button a {
-    text-decoration: none;
+.logInForm__optionsBox a {
     color: black;
 }
 
-
-@media only screen and (min-width: 769px) {
-    .header__image {
-        width: 500px;
-    }
-
-    .empresas h2 {
-        display: block;
-        margin-top: 5%;
-    }
-
-    .contenedorImagenes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .empresas__imagen {
-        display: inline-block;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .empresas__imagen p {
-        font-size: large;
-    }
-
-    .empresas__imagen img {
-        height: 180px;
-        border-radius: 5px;
-    }
-
-    .footer {
-        flex-flow: row wrap;
-    }
-
-    .formContainer {
-        width: 40%;
-    }
-
-    .informacionInstitucional {
-        width: 20%;
-    }
-
-    .logIn {
-        margin: 5% 0;
-    }
-
-    .logInForm {
-        width: 40%;
-    }
-
-    .logInForm__buttonsBox {
-        flex-flow: row wrap;
-    }
+.logInForm__optionsBox a:hover {
+    color: white;
 }
