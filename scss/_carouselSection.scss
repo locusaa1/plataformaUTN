@@ -1,0 +1,24 @@
+.carouselSection {
+  width: 60vw;
+  height: 30vh;
+  margin: auto;
+}
+
+.carousel-item {
+  img {
+    width: 100px;
+    height: 100%;
+  }
+}
+
+.carousel-control {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover{
+    color: #3b6b78;
+  }
+  &:focus{
+    color: black;
+  }
+}

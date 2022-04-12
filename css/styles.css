@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 18px; }
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  header div img {
+    width: 40vw;
+    height: 100%; }
+
+@media screen and (max-width: 800px) {
+  header div img {
+    width: 80vw; } }
+
+.navCustom {
+  background-color: #5c94a1; }
+
+.presentacion {
+  background-image: url("../img/fotoUTN.jpg");
+  background-size: cover; }
+
+.bienvenida {
+  background-color: #5c94a1; }
+
+.carouselSection {
+  width: 60vw;
+  height: 30vh;
+  margin: auto; }
+
+.carousel-item img {
+  width: 100px;
+  height: 100%; }
+
+.carousel-control {
+  color: black;
+  font-weight: bold;
+  text-decoration: none; }
+  .carousel-control:hover {
+    color: #3b6b78; }
+  .carousel-control:focus {
+    color: black; }
+
+.footerCustom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #797979; }
+
+.googleLocation {
+  height: 300px;
+  width: 100%; }
+
+.contactForm-buttonsBox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between; }
