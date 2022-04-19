@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+/*Mapa para los botones de las redes sociales*/
+$redes: (
+        facebook: $colorFacebook,
+        whatsApp: $colorWhatsApp,
+        instagram: $colorInstagram,
+);
+
+/*Bucle que da uso al mapa de las redes generando clases para botones*/
+@each $red, $color in $redes {
+  .btn-#{$red} {
+    background-color: $color;
+    border-color: black;
+  }
+}

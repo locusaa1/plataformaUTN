@@ -1,0 +1,50 @@
+@import "_variables.scss";
+
+.formulario-distincion {
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: $bordeFormulario;
+    background-color: $colorPrincipalOscuro;
+    width: 75%;
+  }
+}
+
+.contenedor-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px){
+  .formulario-distincion {
+    form {
+      width: 100%;
+    }
+  }
+}
