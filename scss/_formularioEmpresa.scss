@@ -1,0 +1,26 @@
+@import "_variables.scss";
+
+.formularioEmpresas {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: $bordeFormulario;
+  background-color: $colorPrincipalOscuro;
+}
+
+.formularioEmpresas-inputs {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.formularioEmpresas-botones {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+

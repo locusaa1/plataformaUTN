@@ -132,3 +132,86 @@ header div {
 @media screen and (max-width: 800px) {
   .formulario-distincion form {
     width: 100%; } }
+
+/*Variables de colores*/
+/*Variables para bordes*/
+.formularioIngreso {
+  display: flex;
+  justify-content: center; }
+  .formularioIngreso form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: black solid 3px;
+    background-color: #3b6b78; }
+
+.inputs-ingreso {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+  .inputs-ingreso div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+.botones-ingreso {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+@media screen and (max-width: 800px) {
+  .formularioIngreso form {
+    width: 100%; } }
+
+/*Variables de colores*/
+/*Variables para bordes*/
+.formularioEstudiantes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .formularioEstudiantes form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black solid 3px;
+    background-color: #3b6b78;
+    width: 50%; }
+
+.formularioEstudiantes-botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+@media screen and (max-width: 800px) {
+  .formularioEstudiantes form {
+    width: 100%; } }
+
+/*Variables de colores*/
+/*Variables para bordes*/
+.formularioEmpresas {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: black solid 3px;
+  background-color: #3b6b78; }
+
+.formularioEmpresas-inputs {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%; }
+
+.formularioEmpresas-botones {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%; }

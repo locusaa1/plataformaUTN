@@ -4,6 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Etiquetas meta dentro del head que ayudan a tener un mejor SEO para el sitio web -->
+    <meta name="description" content="Plataforma de empleos para alumnos de la universidad tecnológica nacional(utn) de mar del plata(mdq)">
+    <meta name="keywords" content="plataforma, utn, universidad tecnológica nacional, empleos, mar del plata, empresas, alumnos, mdp, mdq">
+
+    <!-- Links para implementar un fabicon dentro del sitio -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
@@ -18,17 +23,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../stylesheets/new-local-stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Document</title>
+    <!-- Título del sitio que ayuda también a potenciar el SEO -->
+    <title>Plataforma UTN</title>
 </head>
+
 <body>
 <main class="container-fluid">
 
     <!--Encabezado-->
     <header class="row">
-        <div class="col d-flex flex-row justify-content-center">
-            <img class="header__image" src="../img/logoUTN.png">
+        <div>
+            <img src="../img/logoUTN.png">
         </div>
     </header>
 
@@ -49,24 +56,25 @@
     </nav>
 
     <!--Sección principal-->
+
     <!--Formulario-->
-    <div class="row d-flex justify-content-center">
-        <form class="d-flex flex-column align-items-center justify-content-center p-2 mt-2 w-50 formCustom">
+    <div class="row formularioIngreso">
+        <form class="p-2 mt-2">
             <p>Bienvenido</p>
-            <div class="mb-3 w-50 d-flex flex-column ">
-                <div class="mb-3 d-flex flex-row justify-content-between flex-wrap">
+            <div class="mb-3 inputs-ingreso">
+                <div class="mb-3">
                     <label class="form-label" for="userTextField">Usuario</label>
                     <input class="form-control" id="userTextField" name="username" type="text" required placeholder="usuario">
                 </div>
-                <div class="mb-3 d-flex flex-row justify-content-between flex-wrap">
+                <div class="mb-3">
                     <label class="form-label" for="passwordTextField">Contraseña</label>
                     <input class="form-control" id="passwordTextField" name="password" type="password" required placeholder="contraseña">
                 </div>
             </div>
-            <div class="logInForm__buttonsBox">
+            <div class="botones-ingreso">
                 <button type="submit" class="btn btn-secondary">Iniciar sesión</button>
             </div>
-            <div class="logInForm__optionsBox">
+            <div class="botones-ingreso">
                 <small>¿Olvidó su contraseña? </small><a href="#">Click aquí</a>
                 <small>¿No tienes una cuenta? </small><a href="registrar-cuenta.html">Redirección a registrar</a>
             </div>
@@ -100,7 +108,7 @@
 
     <!--footer-->
     <footer id="footer" class="row">
-        <div class="footerCustom d-flex flex-row flex-wrap justify-content-around">
+        <div class="footerCustom">
             <!-- Formulario de contacto -->
             <div class="p-2 m-2">
                 <p class="text-xl-center">Información de contacto</p>
@@ -132,7 +140,7 @@
                                   type=""
                                   placeholder="deje su mensaje aquí"></textarea>
                     </div>
-                    <div class="contactForm__buttonsBox">
+                    <div class="contactForm-buttonsBox">
                         <button class="btn btn-primary" type="reset">Limpiar</button>
                         <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
@@ -147,8 +155,8 @@
             </div>
 
             <!-- Información de la facultad -->
-            <div class="d-flex flex-column flex-wrap align-content-center align-items-center p-2 m-2">
-                <p class="text-center">
+            <div class="informacionFacultad p-2 m-2">
+                <p>
                     Teléfonos<br>
                     0223 480-5049 / 3479 / 1220<br>
                     Correo electrónico<br>
@@ -157,9 +165,9 @@
                     Buque Pesquero Dorrego N° 281<br>
                 </p>
                 <div class="container">
-                    <a class="btn btn-primary" href="https://www.instagram.com/utnmardelplata/?hl=es">Instagram</a>
-                    <a class="btn btn-primary" href="https://es-la.facebook.com/utnmardelplata/">Facebook</a>
-                    <a class="btn btn-primary" href="https://www.mdp.edu.ar/">Página oficial</a>
+                    <a class="btn btn-primary btn-instagram" href="https://www.instagram.com/utnmardelplata/?hl=es">Instagram</a>
+                    <a class="btn btn-primary btn-facebook" href="https://es-la.facebook.com/utnmardelplata/">Facebook</a>
+                    <a class="btn btn-primary btn-whatsApp" href="https://www.mdp.edu.ar/">Página oficial</a>
 
                 </div>
             </div>
